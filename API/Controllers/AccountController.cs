@@ -21,6 +21,8 @@ public class AccountController(DataContext context, ITokenService tokenService) 
         if (await UserExists(registerDto.Username)) return BadRequest("Username is taken");
         var user = new AppUser
         {
+            DisplayName = registerDto.DisplayName,
+            Email = registerDto.Email,
             UserName = registerDto.Username.ToLower(),
             PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
             PasswordSalts = hmac.Key
