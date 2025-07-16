@@ -15,12 +15,6 @@ C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\scope
 C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets\msbuild.build.API.props
-C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.API.props
-C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.API.props
-C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\API.dll
 C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\refint\API.dll
 C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\API.pdb
@@ -158,3 +152,8 @@ C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\bin\Debug\net9.0\Syste
 C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\keith\code\Angular\ASPNET_Angular\dating_app\API\obj\Debug\net9.0\staticwebassets.build.json.cache
