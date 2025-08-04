@@ -1,49 +1,52 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 
 @Component({
   selector: 'app-test-errors',
   imports: [],
   templateUrl: './test-errors.html',
-  styleUrl: './test-errors.css'
+  styleUrl: './test-errors.css',
 })
 export class TestErrors {
-private http = inject(HttpClient);
-baseUrl = 'https://localhost:5001/api/';
+  private http = inject(HttpClient);
+  baseUrl = 'https://localhost:5001/api/';
+  validationErrors = signal<string[]>([]);
 
-get404Error(){
-  this.http.get(this.baseUrl + 'errorhandling/not-found').subscribe({
-    next: res => console.log(res),
-    error: error => console.log(error)
-  })
-}
+  get404Error() {
+    this.http.get(this.baseUrl + 'errorhandling/not-found').subscribe({
+      next: (res) => console.log(res),
+      error: (error) => console.log(error),
+    });
+  }
 
-get400Error(){
-  this.http.get(this.baseUrl + 'errorhandling/bad-request').subscribe({
-    next: res => console.log(res),
-    error: error => console.log(error)
-  })
-}
+  get400Error() {
+    this.http.get(this.baseUrl + 'errorhandling/bad-request').subscribe({
+      next: (res) => console.log(res),
+      error: (error) => console.log(error),
+    });
+  }
 
-get500Error(){
-  this.http.get(this.baseUrl + 'errorhandling/server-error').subscribe({
-    next: res => console.log(res),
-    error: error => console.log(error)
-  })
-}
+  get500Error() {
+    this.http.get(this.baseUrl + 'errorhandling/server-error').subscribe({
+      next: (res) => console.log(res),
+      error: (error) => console.log(error),
+    });
+  }
 
-get401Error(){
-  this.http.get(this.baseUrl + 'errorhandling/auth').subscribe({
-    next: res => console.log(res),
-    error: error => console.log(error)
-  })
-}
+  get401Error() {
+    this.http.get(this.baseUrl + 'errorhandling/auth').subscribe({
+      next: (res) => console.log(res),
+      error: (error) => console.log(error),
+    });
+  }
 
-get400ValidationError(){
-  this.http.post(this.baseUrl + 'account/register', {}).subscribe({
-    next: res => console.log(res),
-    error: error => console.log(error)
-  })
-}
-
+  get400ValidationError() {
+    this.http.post(this.baseUrl + 'account/register', {}).subscribe({
+      next: (res) => console.log(res),
+      error: (error) => {
+        console.log(error);
+        this.validationErrors.set(error);
+      }
+    });
+  }
 }

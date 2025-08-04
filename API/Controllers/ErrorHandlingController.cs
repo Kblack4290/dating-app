@@ -22,9 +22,9 @@ public class ErrorHandlingController: BaseApiController
         throw new Exception("This is a server error");
     }
 
-        [HttpGet("bad-request")]
+    [HttpGet("bad-request")]
     public IActionResult GetBadRequest()
     {
-        throw new Exception("This is a bad request");
+        return BadRequest("This is a bad request");
     }
 }
