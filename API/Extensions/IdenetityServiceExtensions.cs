@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.CodeAnalysis;
 using Microsoft.IdentityModel.Tokens;
 
 namespace API.Extensions;
