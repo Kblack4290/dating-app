@@ -45,9 +45,9 @@
           class="flex items-center text-white text-xl gap-3 cursor-pointer"
         >
           <img
-            src="/user.png"
+            [src]="user.imageUrl || '/user.png'"
             alt="logged in user"
-            class="rounded-full size-8"
+            class="w-10 h-10 rounded-full"
           />
           <span>{{user.displayName}}</span>
         </div>
