@@ -1,4 +1,4 @@
-@if (member(); as member) {
+@if (memberService.member(); as member) {
 <div class="flex flex-col gap-3">
   <div class="flex gap-3">
     <span class="font-semibold">Member since:</span>
@@ -54,7 +54,7 @@
       />
     </label>
     <div class="flex self-end">
-        <button class="btn btn-success" type="submit">Submit</button>
+        <button [disabled]="!editForm.dirty" class="btn btn-success" type="submit">Submit</button>
     </div>
   </form>
   } @else {
